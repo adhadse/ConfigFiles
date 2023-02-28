@@ -1,0 +1,62 @@
+format = '''
+$username$hostname $directory$conda$python$git_branch $character
+'''
+
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = false
+
+# Set 'foo' as custom color palette
+# palette = 'foo'
+
+[line_break]
+disabled = true 
+
+[character] # The name of the module we are configuring is 'character'
+success_symbol = '[❯](bold green)' # The 'success_symbol' segment is being set to '❯' with the color 'bold green'
+
+[palettes.foo]
+blue = '21'
+
+[username]
+style_root = 'bold yellow'
+style_user = 'bold violet'
+show_always = true
+format = '[$user]($style)'
+
+[hostname]
+ssh_only = false
+style = 'white'
+format = '[@$hostname]($style)'
+
+[directory]
+truncation_length = 1
+truncation_symbol = '…/'
+truncate_to_repo = false
+read_only = '⊗'
+style = 'blue'
+format = '[$path]($style)'
+
+[conda]
+truncation_length = 1
+symbol = 'conda›'
+ignore_base = false
+style = 'bright-blue'
+format = ' $symbol[$environment]($style)'
+
+[python]
+pyenv_prefix = 'pyvenv›'
+style = 'bright-blue'
+format = ' $pyenv_prefix[$virtualenv]($style)'
+
+[git_branch]
+always_show_remote = false
+style = 'green'
+symbol = ' '
+format = ' [($remote_branch»)$branch]($style)'
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true

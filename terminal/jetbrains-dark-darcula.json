@@ -1,0 +1,25 @@
+{
+    "name": "JetBrains-Dark-Darcula",
+    "comment": "JetBrains new UI dark theme",
+    "use-theme-colors": false,
+    "foreground-color": "#a9b7c6",
+    "background-color": "#1e1f22",
+    "palette": [
+        "#232323",
+        "#ff000f",
+        "#8ce10b",
+        "#ffb900",
+        "#008df8",
+        "#b556f5",
+        "#00d8eb",
+        "#ffffff",
+        "#444444",
+        "#ff2740",
+        "#abe15b",
+        "#ffd242",
+        "#0092ff",
+        "#9a5feb",
+        "#67fff0",
+        "#ffffff"
+    ]
+}

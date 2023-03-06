@@ -1,0 +1,7 @@
+{
+    "continuousHinting": true,
+        "showDocumentation": true,
+        "theme": "material",
+        "disableCompletionsFrom": ["Kernel"],
+        "kernelResponseTimeout": 0
+}

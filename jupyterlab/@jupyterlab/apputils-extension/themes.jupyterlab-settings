@@ -1,0 +1,25 @@
+{
+    // Theme
+    // @jupyterlab/apputils-extension:themes
+    // Theme manager settings.
+    // *************************************
+
+    // Theme CSS Overrides
+    // Override theme CSS variables by setting key-value pairs here
+    "overrides": {
+        "code-font-family": "JetBrains Mono",
+        "code-font-size": "16px",
+        "content-font-family": "Inter",
+        "content-font-size1": "16px",
+        "ui-font-family": "Inter",
+        "ui-font-size1": "14px"
+    },
+
+    // Selected Theme
+    // Application-level visual styling theme
+    "theme": "Material Darcula",
+
+    // Scrollbar Theming
+    // Enable/disable styling of the application scrollbars
+    "theme-scrollbars": true
+}

@@ -1,0 +1,11 @@
+{
+    "styleActiveLine": {
+        "nonEmpty": true
+    },
+    "lineWiseCopyCut": true,
+    "keyMap": "default",
+    "theme": "jupyter",
+    "scrollPastEnd": true,
+    "styleSelectedText": true,
+    "selectionPointer": false
+}

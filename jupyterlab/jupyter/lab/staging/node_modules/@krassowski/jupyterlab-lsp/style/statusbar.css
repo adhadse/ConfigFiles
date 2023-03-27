@@ -1,0 +1,150 @@
+.lsp-popover {
+  /* jupyterlab Menu */
+  z-index: 10000;
+  padding: 4px 0px;
+  background: var(--jp-layout-color0);
+  color: var(--jp-ui-font-color1);
+  border: var(--jp-border-width) solid var(--jp-border-color1);
+  font-size: var(--jp-ui-font-size1);
+  box-shadow: var(--jp-elevation-z6);
+}
+
+.lsp-popover-content {
+  padding: 5px 10px;
+}
+
+.lsp-servers-title {
+  margin-bottom: 5px;
+}
+
+.lsp-servers-menu {
+  height: 350px;
+  overflow-y: auto;
+}
+
+.lsp-server-status,
+.lsp-missing-server,
+.lsp-documents-by-language {
+  margin-left: 20px;
+}
+
+h5 .lsp-language-server-name {
+  color: var(--jp-ui-font-color2);
+}
+
+.lsp-documents-by-language ul,
+.lsp-server-status ul {
+  margin: 0;
+  padding-left: 25px;
+}
+
+.lsp-servers-menu h5 {
+  font-weight: normal;
+  font-size: 100%;
+  white-space: nowrap;
+}
+
+.lsp-servers-lists {
+  margin-left: 5px;
+}
+
+.lsp-popover-status {
+  padding-top: 5px;
+  border-top: 1px solid var(--jp-border-color1);
+}
+
+.lsp-popover-status a {
+  color: var(--jp-content-link-color);
+}
+
+.lsp-servers-menu h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+.lsp-documents-by-language li {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lsp-document-status {
+  float: right;
+  padding-left: 15px;
+}
+
+.lsp-document-status-icon {
+  margin-left: 5px;
+  position: relative;
+  top: 3px;
+}
+
+.lsp-collapsible-list h4 {
+  cursor: pointer;
+}
+
+.lsp-collapsible-list .lsp-caret-icon {
+  position: relative;
+  top: 3px;
+}
+
+.lsp-collapsible-list.lsp-collapsed div {
+  display: none;
+}
+
+.lsp-statusbar-item {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.lsp-status-icon.ready svg g {
+  fill: var(--jp-success-color0);
+}
+
+.lsp-status-icon.preparing svg g {
+  fill: var(--jp-warn-color0);
+}
+
+.lsp-status-icon.error svg g {
+  fill: var(--jp-error-color0);
+}
+
+.lsp-status-icon.inactive svg g {
+  fill: var(--jp-layout-color3);
+}
+
+.lsp-status-message {
+  user-select: none;
+}
+
+body[data-jp-theme-light='false'] .lsp-status-icon.ready svg g {
+  fill: var(--jp-success-color1);
+}
+
+.lsp-statusbar-item.jp-mod-selected .jp-icon-selectable[fill] {
+  fill: #fff;
+}
+
+.jp-ToolbarButton .lsp-status-icon svg {
+  top: 5px;
+}
+
+.lsp-help-button {
+  background: var(--jp-layout-color2);
+  border: 1px solid var(--jp-brand-color0);
+  float: right;
+}
+
+.lsp-help-button:hover {
+  background: var(--jp-layout-color3);
+}
+
+.lsp-server-links-list a {
+  color: var(--jp-content-link-color);
+}
+
+.lsp-troubleshoot-section {
+  white-space: pre-wrap;
+  margin: 10px 0;
+}

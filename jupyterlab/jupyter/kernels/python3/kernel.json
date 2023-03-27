@@ -1,0 +1,14 @@
+{
+ "argv": [
+  "/home/adhadse/anaconda3/envs/develop/bin/python",
+  "-m",
+  "ipykernel_launcher",
+  "-f",
+  "{connection_file}"
+ ],
+ "display_name": "Python 3 (ipykernel)",
+ "language": "python",
+ "metadata": {
+  "debugger": true
+ }
+}

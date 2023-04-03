@@ -1,0 +1,386 @@
+[
+  {
+    "settings": {
+      "openEditInWindow": false,
+      "openEditInWindow.popup": false,
+      "windowPosition": {},
+      "show-badge": true,
+      "disableAll": false,
+      "exposeIframes": false,
+      "exposeStyleName": false,
+      "newStyleAsUsercss": false,
+      "styleViaXhr": false,
+      "patchCsp": false,
+      "config.autosave": true,
+      "schemeSwitcher.enabled": "system",
+      "schemeSwitcher.nightStart": "18:00",
+      "schemeSwitcher.nightEnd": "06:00",
+      "popup.breadcrumbs": true,
+      "popup.breadcrumbs.usePath": false,
+      "popup.enabledFirst": true,
+      "popup.stylesFirst": true,
+      "popup.autoResort": false,
+      "popup.borders": false,
+      "popup.findSort": "u",
+      "manage.onlyEnabled": false,
+      "manage.onlyLocal": false,
+      "manage.onlyUsercss": false,
+      "manage.onlyEnabled.invert": false,
+      "manage.onlyLocal.invert": false,
+      "manage.onlyUsercss.invert": false,
+      "manage.actions.expanded": true,
+      "manage.backup.expanded": true,
+      "manage.filters.expanded": true,
+      "manage.minColumnWidth": 750,
+      "manage.newUI": true,
+      "manage.newUI.favicons": false,
+      "manage.newUI.faviconsGray": true,
+      "manage.newUI.targets": 3,
+      "manage.newUI.sort": "title,asc",
+      "editor.options": {},
+      "editor.toc.expanded": true,
+      "editor.options.expanded": true,
+      "editor.lint.expanded": true,
+      "editor.publish.expanded": true,
+      "editor.lineWrapping": true,
+      "editor.smartIndent": true,
+      "editor.indentWithTabs": false,
+      "editor.tabSize": 4,
+      "editor.keyMap": "default",
+      "editor.theme": "default",
+      "editor.beautify": {
+        "selector_separator_newline": true,
+        "newline_before_open_brace": false,
+        "newline_after_open_brace": true,
+        "newline_between_properties": true,
+        "newline_before_close_brace": true,
+        "newline_between_rules": false,
+        "preserve_newlines": true,
+        "end_with_newline": false,
+        "indent_conditional": true,
+        "indent_mozdoc": true
+      },
+      "editor.beautify.hotkey": "",
+      "editor.lintDelay": 300,
+      "editor.linter": "csslint",
+      "editor.lintReportDelay": 500,
+      "editor.matchHighlight": "token",
+      "editor.autoCloseBrackets": true,
+      "editor.autocompleteOnTyping": false,
+      "editor.contextDelete": false,
+      "editor.selectByTokens": true,
+      "editor.arrowKeysTraverse": true,
+      "editor.appliesToLineWidget": true,
+      "editor.autosaveDraft": 10,
+      "editor.livePreview": true,
+      "editor.colorpicker": true,
+      "editor.colorpicker.hexUppercase": false,
+      "editor.colorpicker.hotkey": "",
+      "editor.colorpicker.color": "",
+      "editor.colorpicker.maxHeight": 300,
+      "hotkey._execute_browser_action": "",
+      "hotkey.openManage": "",
+      "hotkey.styleDisableAll": "",
+      "sync.enabled": "none",
+      "iconset": -1,
+      "badgeDisabled": "#8B0000",
+      "badgeNormal": "#006666",
+      "headerWidth.edit": 280,
+      "headerWidth.install": 280,
+      "headerWidth.manage": 280,
+      "popupWidth": 246,
+      "updateInterval": 24
+    },
+    "order": {
+      "main": [],
+      "prio": []
+    }
+  },
+  {
+    "method": "saveStyle",
+    "name": "colab theme",
+    "enabled": true,
+    "sections": [
+      {
+        "code": ".view-line, .monaco-editor .suggest-widget .monaco-list .monaco-list-row>.contents>.main>.left, .monaco-editor .suggest-widget .monaco-list .monaco-list-row>.contents>.main>.right {\n    font-family: var(--code-font);\n    font-weight: 400;\n}\n\n.jupyter-widgets.widget-tab > .p-TabBar .p-TabBar-tab, .p-TabBar.p-TabBar-tab, .lm-TabBar-tabLabel, .p-TabBar-tabLabel  {\n    color: #fff!important;\n}\n\n.p-TabBar .p-TabBar-tab {\n    color: #fff!important;\n}\n\n:root {\n    --jp-ui-font-color2: #fff!important;\n}\n\ncode, pre .output-text {\n\tfont-family: var(--code-font);\n    font-weight: 400;\n}\n\n.message {\n    font-family: var(--code-font);\n    font-weight: 400;\n}\n\n\ncolab-static-output-renderer pre {\n    font-family: var(--code-font);\n    font-weight: 400;\n}\n\n.notebook-container {\n\toverflow-x: hidden;\n}\n\n.mtk14 {                       /* methods */\n    color: #0055AA!important;  /* for methods from package */\n    /* color: #0000FF */       /*for defined methods */\n}\n\n.mtk6, .mtk18 {              /* import, def*/\n    color: #008000!important;\n    font-weight: bold;\n}\n.mtk11  {            /* numbers */\n    color: #008000!important;\n}\n\n.mtk26 {                     /* strings */\n    color: #BA2121!important;  \n}\n\n.mtk8 {                     /* comments */\n    color: #408080!important;  \n    font-style: italic!important;\n    font-weight: bold;\n}\n\n\n/* Dark theme */\n.monaco-editor, .monaco-editor-background, .monaco-editor .inputarea.ime-input, .inputarea, .margin-view-overlays {\n    background-color: #2b2b2b;\n}\n\n.mtk1, .mtk4 { \t    /* variables */\n    color: #cacbcc!important;\n}  \n.mtk6 {\t\t\t\t/* Integers */\n    color: #689757!important;\n}\n.mtk9, .mtk19, .mtk18 {              /* keyword */\n    color: #cc7832!important;\n    font-weight: bold;\n}\n.mtk14 {\t\t\t/* class */\n    color: #bbb529!important;\n}\n.mtk15 {            /* functions */\n    color: #9876aa!important;\n}\n.mtk8 {             /* comments */\n    color: #606366!important;\n}\n.mtk10 {\t\t\t/* text */\n    color: #73767a!important;\n}\n.mtk5 {             /*strings */\n    color: #6a8759!important;\n} \n  \n",
+        "urlPrefixes": [
+          "https://colab.research.google.com/"
+        ]
+      }
+    ],
+    "id": 1,
+    "_id": "13bac255-6ebb-400a-b860-a8b64a54d8ab",
+    "_rev": 1676880558064,
+    "updateDate": 1676880558064
+  },
+  {
+    "method": "saveStyle",
+    "name": "Kaggle theme",
+    "enabled": true,
+    "sections": [
+      {
+        "code": ".lm-Widget p-Widget jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput {\n    font-family:'Inter', serif;\n}\n\nbody[data-jp-theme-light=\"false\"] .cm-s-jupyter span.cm-keyword {\n    color: #cc7832 !important;\n    font-weight: bold;   \n}\n.cm-s-jupyter span.cm-variable {\n    color: #cacbcc!important;\n} \n.cm-s-jupyter span.cm-def {\n    color: #9876aa!important;\n}\n.cm-s-jupyter span.cm-comment {\n    color: #606366!important;\n}\n.cm-s-jupyter span.cm-number {\n    color: #689757!important;\n}\n.cm-s-jupyter span.cm-string {\n    color: #6a8759!important;\n}\n",
+        "urlPrefixes": [
+          "https://www.kaggle.com"
+        ]
+      }
+    ],
+    "id": 2,
+    "_id": "e5039188-f169-4e27-835e-ef55d433958f",
+    "_rev": 1659355187705,
+    "updateDate": 1659355187705
+  },
+  {
+    "method": "saveStyle",
+    "name": "Stackoverflow theme",
+    "enabled": true,
+    "sections": [
+      {
+        "urls": [],
+        "urlPrefixes": [
+          "https://stackoverflow.com/"
+        ],
+        "domains": [],
+        "regexps": [],
+        "code": ".s-code-block, textarea.wmd-input, textarea#wmd-input,  .s-prose code{\n\tfont-family: var(--code-font)!important;\n}\n    "
+      }
+    ],
+    "id": 3,
+    "_id": "ddab3947-d922-48ff-8f13-cc53dd7d7cc1",
+    "_rev": 1655082699046
+  },
+  {
+    "method": "saveStyle",
+    "name": "Github Theme",
+    "enabled": true,
+    "sections": [
+      {
+        "code": ".cm-s-github-light .CodeMirror-lines, .react-code-text {\n\tfont-family: var(--code-font);\n}\n.highlight > * {\n    font-family: var(--code-font);\n}\n\n.blob-code-inner, .blob-num {\n    font-family: var(--code-font);\n}\n\n.commit-ref {\n    font-family: var(--code-font);\n}\n\n:root {\n    --color-prettylights-syntax-keyword: #cc7832!important;\n    --color-prettylights-syntax-constant: #cc7832!important;\n    --color-prettylights-syntax-entity:  #ffc66d!important;\n    --color-prettylights-syntax-variable: inherit!important;\n    --color-prettylights-syntax-string: #6a8759!important;\n    --color-prettylights-syntax-comment: #808080!important;\n    --color-prettylights-syntax-entity-tag: #CC7832!important;\n}\n\n.react-line-number.virtual, .react-code-line-contents.virtual, \n.react-code-text, .react-code-line-contents, \n.react-line-numbers,\n.blob-num:not(.blob-num-addition):not(.blob-num-deletion):not(.blob-num-expandable):not(.blob-num-hunk) {\n background-color: #1e1f22!important;    \n}\n\n.blob-code:not(.blob-code-addition):not(.blob-code-deletion):not(.blob-code-hunk) {\n    color: #A9B7C6!important;  /* default font color */\n    background-color: #1e1f22!important; \n}\n\n.pl-en > span.pl-s1 {\n    color: #BBB529!important;\n}",
+        "domains": [
+          "github.com"
+        ]
+      }
+    ],
+    "id": 4,
+    "_id": "7012ab9b-e1c1-4404-8ad5-33cc7bc01a55",
+    "_rev": 1679290549187,
+    "updateDate": 1679290549187
+  },
+  {
+    "method": "saveStyle",
+    "name": "General",
+    "enabled": true,
+    "sections": [
+      {
+        "code": "* {\n    font-variant-ligatures: normal !important;\n}\n:root {\n    --code-font: 'JetBrains Mono'!important;\n    --code-font-weight: 400;\n    --default-mono-font: 'JetBrains Mono', 'Menlo' !important;\n    --default-regular-font: 'Inter', -apple-system !important;\n}\ncode {\n    font-family:  var(--code-font) !important;\n}\n\npre {\n    font-family: var(--code-font) !important;\n    font-size: 15px;\n}\n\n\n/* Jupyter Notebook style */\n.jp-Notebook .CodeMirror.cm-s-jupyter {\n    font-family: var(--code-font)!important;\n    font-weight: var(--code-font-weight);\n}\n\n.jp-OutputArea-output pre, .jp-OutputArea-output > * {\n    font-family: var(--code-font)!important;\n    font-weight: var(--code-font-weight);\n}\n\n.ace_content {\n    font-family: var(--code-font);\n    font-weight: var(--code-font-weight);\n}"
+      }
+    ],
+    "id": 5,
+    "_id": "8a04e8e0-02a2-4edb-a3b3-94efd4bcc0f4",
+    "_rev": 1680415851901,
+    "updateDate": 1680415851901
+  },
+  {
+    "method": "saveStyle",
+    "name": "Google Cloud",
+    "enabled": true,
+    "sections": [
+      {
+        "urls": [],
+        "urlPrefixes": [
+          "https://shell.cloud.google.com/"
+        ],
+        "domains": [],
+        "regexps": [],
+        "code": ".xterm-rows {\n\tfont-family: var(--code-font);\n    font-weight: var(--code-font-weight);\n}"
+      }
+    ],
+    "id": 6,
+    "_id": "b986dcdf-d599-49a3-951e-48afd75da68f",
+    "_rev": 1655082699046
+  },
+  {
+    "method": "saveStyle",
+    "name": "go docs",
+    "enabled": true,
+    "sections": [
+      {
+        "code": ".Documentation-indexList > * {\n\tfont-family: var(--code-font);\n}\n\n#Documentation_nav_group_Functions > * {\n    font-family: var(--code-font);\n}\n\n#Documentation_nav_group_Types > * {\n    font-family: var(--code-font);\n}\n\n.Documentation-functionHeader {\n    font-family: var(--code-font);\n}",
+        "urlPrefixes": [
+          "https://pkg.go.dev/"
+        ]
+      }
+    ],
+    "id": 7,
+    "_id": "ebee0012-b046-423b-a351-ff409529a35f",
+    "_rev": 1674608561561,
+    "updateDate": 1674608561561
+  },
+  {
+    "method": "saveStyle",
+    "name": "DVC",
+    "enabled": true,
+    "sections": [
+      {
+        "code": "body {\n\tfont-family: -apple-system,BlinkMacSystemFont,\"Segoe UI\",Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\";\n}",
+        "urlPrefixes": [
+          "https://dvc.org/doc"
+        ]
+      }
+    ],
+    "id": 8,
+    "_id": "8b74a9fb-db3d-4aef-84f3-8fa33d39aa9c",
+    "_rev": 1666317440091,
+    "updateDate": 1666317440091
+  },
+  {
+    "method": "saveStyle",
+    "name": "PyTorch Docs",
+    "enabled": true,
+    "sections": [
+      {
+        "code": "code span, kbd span, pre span, samp span {\n    font-family: var(--code-font);\n    font-weight: var(--code-font-weight);\n    font-size: 0.9rem;\n}\narticle.pytorch-article pre>* {\n    font-family: var(--code-font);\n    font-weight: var(--code-font-weight);\n    font-size: 0.9rem;\n}\narticle.pytorch-article .function dt em, article.pytorch-article .attribute dt em, article.pytorch-article .class .attribute dt em, article.pytorch-article .class dt em, article.pytorch-article .function dt .sig-paren, article.pytorch-article .attribute dt .sig-paren, article.pytorch-article .class dt .sig-paren article.pytorch-article .function dt em, article.pytorch-article .attribute dt em, article.pytorch-article .class .attribute dt em, article.pytorch-article .class dt em, article.pytorch-article .function dt .sig-paren, article.pytorch-article .attribute dt .sig-paren, article.pytorch-article .class dt .sig-paren, .sig-prename>.pre, span.highlighted, span.pre >* {\n    font-family: var(--code-font);\n    font-weight: var(--code-font-weight);\n    font-size: 0.9rem;\n}\n\nli.toctree-l1{\n    font-family: var(--code-font);\n    font-weight: var(--code-font-weight);\n}\n                        ",
+        "urlPrefixes": [
+          "https://pytorch.org/"
+        ]
+      }
+    ],
+    "id": 9,
+    "_id": "b310a0e3-44e7-406c-a2cd-5bec5c8bfba9",
+    "_rev": 1678102000059,
+    "updateDate": 1678102000059
+  },
+  {
+    "method": "saveStyle",
+    "name": "Notion-web",
+    "enabled": true,
+    "sections": [
+      {
+        "urls": [],
+        "urlPrefixes": [
+          "https://www.notion.so/"
+        ],
+        "domains": [],
+        "regexps": [],
+        "code": ".notion-code-block div.notranslate {\n\tfont-family: var(--code-font);\n}"
+      }
+    ],
+    "id": 10,
+    "_id": "10b3771c-8575-4251-aa72-4f6d0247bee1",
+    "_rev": 1655082699046
+  },
+  {
+    "method": "saveStyle",
+    "name": "TensorFlow Hub",
+    "enabled": true,
+    "sections": [
+      {
+        "urls": [],
+        "urlPrefixes": [
+          "https://tfhub.dev/"
+        ],
+        "domains": [],
+        "regexps": [],
+        "code": "markdown-snippet code span {\n\tfont-family: var(--code-font);\n    font-weight: var(--code-font-weight);\n}"
+      }
+    ],
+    "id": 11,
+    "_id": "aedf69cc-d8f9-45bf-bb72-a08c410f8355",
+    "_rev": 1655082699046
+  },
+  {
+    "enabled": true,
+    "installDate": 1658152807109,
+    "name": "Rust docs",
+    "sections": [
+      {
+        "code": "body {\n    font: 1rem \"Open Sans\", \"Source Serif 4\",NanumBarunGothic,serif;\n}\n\n.code-header, .sidebar-elems, a.test-arrow {\n    font-family: var(--code-font) !important;\n}\n\n",
+        "urlPrefixes": [
+          "https://doc.rust-lang.org/",
+          "https://pola-rs.github.io/",
+          "https://aaronerhardt.github.io/docs/",
+          "https://gtk-rs.org/",
+          "https://docs.rs/"
+        ]
+      },
+      {
+        "code": "",
+        "urlPrefixes": [
+          "http://example.com"
+        ]
+      }
+    ],
+    "updateDate": 1663865043821,
+    "_id": "0b2a03bb-9d8a-41c5-bef3-50be01d289cc",
+    "_rev": 1663865043821,
+    "id": 12
+  },
+  {
+    "enabled": true,
+    "installDate": 1675910695104,
+    "name": "AWS theme",
+    "sections": [
+      {
+        "code": "div.logs__log-events-table__formatted-message .logs__log-events-table__content {\n    font-family: var(--code-font) !important;\n}\n\n.logs__log-events-table__cell {\n    font-family: var(--code-font) !important;\n}\n",
+        "domains": [
+          "console.aws.amazon.com"
+        ]
+      }
+    ],
+    "updateDate": 1675911256652,
+    "_id": "792a3aef-8ccf-47a2-b4ab-0fd24893582a",
+    "_rev": 1675911256652,
+    "id": 13
+  },
+  {
+    "enabled": true,
+    "installDate": 1677635434948,
+    "name": "WandB Theme",
+    "sections": [
+      {
+        "code": ".line-plot-title > * {\n  font-family: var(--code-font)!important;   \n}\n\n.line-plot-flag-escaping > * {\n  font-family: var(--code-font)!important;   \n}",
+        "domains": [
+          "wandb.ai"
+        ]
+      }
+    ],
+    "updateDate": 1677636888365,
+    "_id": "d3ebbedf-d62d-4531-bddb-634c0f35088b",
+    "_rev": 1677636888365,
+    "id": 14
+  },
+  {
+    "enabled": true,
+    "installDate": 1678062027014,
+    "name": "PyTorch Lightning",
+    "sections": [
+      {
+        "code": "code span, kbd span, pre span, samp span {\n    font-family: var(--code-font) !important;\n}",
+        "urlPrefixes": [
+          "https://pytorch-lightning.readthedocs.io/"
+        ]
+      }
+    ],
+    "updateDate": 1678062071422,
+    "_id": "20891371-f612-4698-9faa-054d8342c474",
+    "_rev": 1678062071422,
+    "id": 15
+  },
+  {
+    "enabled": true,
+    "installDate": 1679795181914,
+    "name": "Retool theme",
+    "sections": [
+      {
+        "code": "/* Text Classes */\n .class1 {\n\tline-height: 1.5;\n\tmargin-left: 20px;\n}\n\n.class2 {\n\tline-height: 1.5;\n}\n\n.class3 {\n\tfont-size: 14px;\n\tline-height: 1.5;\n  font-family: Helvetica;\n\tcolor: #65B2F3;\n}\n\n.class4 {\n\tfont-size: 12px;\n\tcolor: white;\n  font-family: Helvetica;\n\tline-height: 1.5;\n}\n\n.class5 {\n\tcolor: white;\n\tfont-size: 12px;\n  font-family: Helvetica;\n}\n.class6 {\n\tcolor: #747474;\n  font-family: Helvetica;\n  font-weight: bold;\n\tfont-size: 12px;\n}\n.class7 {\n\tcolor: white;\n\tfont-size: 12px;\n  font-family: Helvetica;\n  line-height: 1;\n}\n  \n.line_breaks {\n\theight:3px; \n  border:none; \t\t\t\n  color:#000; \n  background-color:#2F4F4F; \n  width:100%; \n  padding: 0px;\n  vertical-align: middle;\n  padding-top: 0px;\n  margin: 10 auto;\n} \n\n/* Background */\n\n._retool-container_1 {\n\tbackground-color: #171E25!important;\n}\n\n._retool-rcontainer_2 {\n\tbackground-color: #171E25!important;\n}\n\n._retool-container_3 {\n\tbackground-color: #171E25!important;\n}\n\n._retool-container_4 {\n\tbackground-color: #171E25!important;\n}\n\n._retool-container_5 {\n\tbackground-color: #171E25!important;\n}\n  .retool-container-title-wrapper {\n    height: 40px;\n    background-color: #1C2A35;\n    font-family: Arial;\n    font-style: normal;\n    font-weight: 600;\n    font-size: 12px;\n    line-height: 16px;\n    letter-spacing: .03em;\n    text-transform: uppercase;\n    color: white;\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-align: center;\n    align-items: center;\n    padding-left: 18px;\n    padding-right: 18px;\n    border-radius: 4px 4px 0 0;\n    \n\n</style> \n<style>\n  /* Background  of page*/\n  \ndiv.retool-grid.root-retool-grid {\n    background-color: #121212;\n}\ndiv.presentation-header-container.navbar-production {\n   background-color: #121212; \n}\ndiv.presentation-canvas-padding {\n    background-color: #121212; \n}\nspan.ant-dropdown-trigger {\n    display: none;\n}\nspan.ant-breadcrumb-separator {\n   display: none; \n}\ndiv.presentation-header-container.navbar-production {\n    display: none;\n}\n    \n</style>\n<style>\n  /* Button Styling */ \n  \n._retool-button_1.nofs > div > button {\n    background-color: #171E25;\n    border: 2px solid #FE5821;\n  \tcolor:white;\n}\n._retool-button_2.nofs > div > button {\n    background-color: #171E25;\n    border: 2px solid #FE5821;\n  \tcolor:white;\n}\n  \n._retool-button_3.nofs > div > button {\n    background-color: #171E25;\n    border: 2px solid #FE5821;\n  \tcolor:white;\n}  \n\n._retool-modal_1 > button {\n    background-color: #FE5821;\n    border: 2px solid #FE5821;\n  \tcolor:black;\n} \n  \n._retool-modal_2 > button {\n    background-color: #FE5821;\n    border: 2px solid #FE5821;\n  \tcolor:#FFF;\n\n}  \n  \n  \n/* Hover Button Styling */  \n\n._retool-button_1.nofs > div > button:hover {\n    background-color: #F0805B;\n    border: 2px solid #F0805B;\n  \tcolor:#FFF;\n}\n._retool-button_2.nofs > div > button:hover {\n    background-color: #F0805B;\n    border: 2px solid #F0805B;\n  \tcolor:#FFF;\n} \n._retool-modal_1 > button:hover {\n    background-color: #F0805B;\n    border: 2px solid #F0805B;\n  \tcolor:#fff;\n} \n  \n._retool-modal_2 > button:hover {\n    background-color: #F0805B;\n    border: 2px solid #F0805B;\n  \tcolor:#fff;\n}  \n  \n._retool-button_3.nofs:hover > div > button {\n    background-color: #F0805B;\n    border: 2px solid #F0805B;\n  \tcolor:#FFF;\n}  ",
+        "domains": [
+          "retool.com"
+        ]
+      }
+    ],
+    "updateDate": 1679795206239,
+    "_id": "60207e6f-1651-470c-88a0-8093bfa08fd3",
+    "_rev": 1679795206239,
+    "id": 16
+  }
+]

@@ -1,0 +1,11 @@
+theme = "darcula-solid"
+
+[keys.normal]
+j = "move_visual_line_up"
+k = "move_visual_line_down"
+
+[keys.insert]
+"C-s" = ":w"
+
+[editor]
+auto-save = true

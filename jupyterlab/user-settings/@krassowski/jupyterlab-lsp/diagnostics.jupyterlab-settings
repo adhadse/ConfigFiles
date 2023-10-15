@@ -1,9 +1,16 @@
-{"ignoreCodes": [
-          "E402", 
-          "E703", 
-          "E303", 
-          "E501",
-          "E111",
-          "W291",  
-    "W293"
-        ]}
+{
+    "defaultSeverity": "Warning",
+    "ignoreCodes": [
+        "E402",
+        "W293",
+        "E703",
+        "E303",
+        "E501",
+        "E111",
+        "W291"
+    ],
+    "ignoreMessagesPatterns": [
+        "E303"
+    ],
+    "disable": false
+}

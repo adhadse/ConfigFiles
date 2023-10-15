@@ -1,6 +1,7 @@
 format = '''
-$username$hostname $directory$conda$python$git_branch $character
+$username$hostname $directory$conda$python$git_branch$git_status $character
 '''
+command_timeout = 2￼000
 
 # Get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
@@ -12,7 +13,7 @@ add_newline = false
 # palette = 'foo'
 
 [line_break]
-disabled = true 
+disabled = true
 
 [character] # The name of the module we are configuring is 'character'
 success_symbol = '[❯](bold green)' # The 'success_symbol' segment is being set to '❯' with the color 'bold green'
@@ -28,7 +29,7 @@ format = '[$user]($style)'
 
 [hostname]
 ssh_only = false
-style = 'white'
+style = '#fafafa'
 format = '[@$hostname]($style)'
 
 [directory]
@@ -36,26 +37,43 @@ truncation_length = 1
 truncation_symbol = '…/'
 truncate_to_repo = false
 read_only = '⊗'
-style = 'blue'
+style = '#EFABFF'
 format = '[$path]($style)'
 
 [conda]
 truncation_length = 1
 symbol = 'conda›'
 ignore_base = false
-style = 'bright-blue'
+style = '#2EC0F9'
 format = ' $symbol[$environment]($style)'
 
 [python]
 pyenv_prefix = 'pyvenv›'
-style = 'bright-blue'
+style = '#2EC0F9'
 format = ' $pyenv_prefix[$virtualenv]($style)'
 
 [git_branch]
 always_show_remote = false
-style = 'green'
+style = '#C3F73A'
 symbol = ' '
+only_attached = true
 format = ' [($remote_branch»)$branch]($style)'
+
+[git_status]
+format = '([\[$conflicted$deleted$renamed$modified$staged$untracked$ahead_behind\]]($style))'
+conflicted = 'CONF-'
+ahead = 'AEHD-'
+behind = 'BHND-'
+diverged = 'DIVR-'
+up_to_date = 'UPTD-'
+untracked = 'UNTR-'
+stashed = 'STAS-'
+modified = 'MODF-'
+staged = 'STAG-'
+renamed = 'RNMD-'
+deleted = 'DELE-'
+typechanged = 'TYCH-'
+
 
 # Disable the package module, hiding it from the prompt completely
 [package]

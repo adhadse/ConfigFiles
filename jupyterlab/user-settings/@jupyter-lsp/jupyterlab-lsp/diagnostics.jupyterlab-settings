@@ -1,0 +1,10 @@
+{
+    "defaultSeverity": "Warning",
+    "ignoreCodes": [
+        "E303",
+        "W293"
+    ],
+    "ignoreMessagesPatterns": [],
+    "ignoreSeverities": [],
+    "disable": false
+}

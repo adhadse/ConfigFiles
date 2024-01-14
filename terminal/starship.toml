@@ -1,8 +1,9 @@
-format = '''
-$username$hostname $directory$conda$python$git_branch$git_status $character
-'''
 command_timeout = 2￼000
 
+format = '''
+$username$hostname $directory$conda$python$git_branch$git_status 
+$character
+'''
 # Get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
 
@@ -62,15 +63,15 @@ format = ' [($remote_branch»)$branch]($style)'
 [git_status]
 format = '([\[$conflicted$deleted$renamed$modified$staged$untracked$ahead_behind\]]($style))'
 conflicted = 'CONF-'
-ahead = 'AEHD-'
+ahead = 'AHED-'
 behind = 'BHND-'
 diverged = 'DIVR-'
 up_to_date = 'UPTD-'
 untracked = 'UNTR-'
-stashed = 'STAS-'
+stashed = 'STSH-'
 modified = 'MODF-'
 staged = 'STAG-'
-renamed = 'RNMD-'
+renamed = 'RENM-'
 deleted = 'DELE-'
 typechanged = 'TYCH-'
 

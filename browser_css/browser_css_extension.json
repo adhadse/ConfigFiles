@@ -1,22 +1,22 @@
 [
   {
     "settings": {
-      "openEditInWindow": false,
+      "openEditInWindow": true,
       "openEditInWindow.popup": false,
       "windowPosition": {},
       "show-badge": true,
       "disableAll": false,
       "exposeIframes": false,
       "exposeStyleName": false,
-      "newStyleAsUsercss": false,
+      "newStyleAsUsercss": true,
+      "styleViaASS": false,
       "styleViaXhr": false,
       "patchCsp": false,
+      "urlInstaller": true,
       "config.autosave": true,
       "schemeSwitcher.enabled": "system",
       "schemeSwitcher.nightStart": "18:00",
       "schemeSwitcher.nightEnd": "06:00",
-      "popup.breadcrumbs": true,
-      "popup.breadcrumbs.usePath": false,
       "popup.enabledFirst": true,
       "popup.stylesFirst": true,
       "popup.autoResort": false,
@@ -37,6 +37,7 @@
       "manage.newUI.faviconsGray": true,
       "manage.newUI.targets": 3,
       "manage.newUI.sort": "title,asc",
+      "manage.searchMode": "meta",
       "editor.options": {},
       "editor.toc.expanded": true,
       "editor.options.expanded": true,
@@ -49,16 +50,16 @@
       "editor.keyMap": "default",
       "editor.theme": "default",
       "editor.beautify": {
-        "selector_separator_newline": true,
-        "newline_before_open_brace": false,
-        "newline_after_open_brace": true,
-        "newline_between_properties": true,
-        "newline_before_close_brace": true,
-        "newline_between_rules": false,
-        "preserve_newlines": true,
         "end_with_newline": false,
         "indent_conditional": true,
-        "indent_mozdoc": true
+        "indent_mozdoc": true,
+        "newline_after_open_brace": true,
+        "newline_before_close_brace": true,
+        "newline_before_open_brace": false,
+        "newline_between_properties": true,
+        "newline_between_rules": false,
+        "preserve_newlines": true,
+        "selector_separator_newline": true
       },
       "editor.beautify.hotkey": "",
       "editor.lintDelay": 300,
@@ -89,7 +90,11 @@
       "headerWidth.install": 280,
       "headerWidth.manage": 280,
       "popupWidth": 246,
-      "updateInterval": 24
+      "popupWidthMax": 280,
+      "updateInterval": 24,
+      "updateOnlyEnabled": false,
+      "popup.breadcrumbs": true,
+      "popup.breadcrumbs.usePath": false
     },
     "order": {
       "main": [],
@@ -110,7 +115,7 @@
     ],
     "id": 1,
     "_id": "13bac255-6ebb-400a-b860-a8b64a54d8ab",
-    "_rev": 1676880558064,
+    "_rev": 1691497039324,
     "updateDate": 1676880558064
   },
   {
@@ -155,16 +160,22 @@
     "enabled": true,
     "sections": [
       {
-        "code": ".cm-s-github-light .CodeMirror-lines, .react-code-text {\n\tfont-family: var(--code-font);\n}\n.highlight > * {\n    font-family: var(--code-font);\n}\n\n.blob-code-inner, .blob-num {\n    font-family: var(--code-font);\n}\n\n.commit-ref {\n    font-family: var(--code-font);\n}\n\n:root {\n    --color-prettylights-syntax-keyword: #cc7832!important;\n    --color-prettylights-syntax-constant: #cc7832!important;\n    --color-prettylights-syntax-entity:  #ffc66d!important;\n    --color-prettylights-syntax-variable: inherit!important;\n    --color-prettylights-syntax-string: #6a8759!important;\n    --color-prettylights-syntax-comment: #808080!important;\n    --color-prettylights-syntax-entity-tag: #CC7832!important;\n}\n\n.react-line-number.virtual, .react-code-line-contents.virtual, \n.react-code-text, .react-code-line-contents, \n.react-line-numbers,\n.blob-num:not(.blob-num-addition):not(.blob-num-deletion):not(.blob-num-expandable):not(.blob-num-hunk) {\n background-color: #1e1f22!important;    \n}\n\n.blob-code:not(.blob-code-addition):not(.blob-code-deletion):not(.blob-code-hunk) {\n    color: #A9B7C6!important;  /* default font color */\n    background-color: #1e1f22!important; \n}\n\n.pl-en > span.pl-s1 {\n    color: #BBB529!important;\n}",
+        "code": ".cm-s-github-light .CodeMirror-lines, .react-code-text, .text-mono {\n\tfont-family: var(--code-font) !important;\n}\n.highlight > * {\n    font-family: var(--code-font);\n}\n\n.blob-code-inner, .blob-num {\n    font-family: var(--code-font);\n}\n\n.commit-ref {\n    font-family: var(--code-font);\n}\n\n/* adhadseKavida theme */\n[data-color-mode=auto][data-dark-theme=dark_dimmed] {\n    --color-prettylights-syntax-keyword: #cc7832!important;\n    --color-prettylights-syntax-constant: #cc7832!important;\n    --color-prettylights-syntax-entity:  #ffc66d!important;\n    --color-prettylights-syntax-variable: inherit!important;\n    --color-prettylights-syntax-string: #6a8759!important;\n    --color-prettylights-syntax-comment: #808080!important;\n    --color-prettylights-syntax-entity-tag: #CC7832!important;\n    --color-canvas-default: #1e1f22!important;\n}\n\n/* adhadse theme */\n[data-dark-theme=dark] {\n    --color-prettylights-syntax-keyword: #cc7832!important;\n    --color-prettylights-syntax-constant: #cc7832!important;\n    --color-prettylights-syntax-entity:  #ffc66d!important;\n    --color-prettylights-syntax-variable: inherit!important;\n    --color-prettylights-syntax-string: #6a8759!important;\n    --color-prettylights-syntax-comment: #808080!important;\n    --color-prettylights-syntax-entity-tag: #CC7832!important;\n    /*--color-canvas-default: #1e1f22!important;*/\n}\n\n.markdown-body pre {\n    background-color: #1e1f22!important;\n}\n\n.react-line-number.virtual, .react-code-line-contents.virtual, \n.react-code-text, .react-code-line-contents, \n.react-line-numbers, .react-code-lines, \n.blob-num:not(.blob-num-addition):not(.blob-num-deletion):not(.blob-num-expandable):not(.blob-num-hunk):not(::selection) {\n background-color: #1e1f22!important;    \n}\n\n.react-blob-print-hide::selection {\n     background-color: rgb(50 80 90 / 0.5) !important;\n}\n\n.Box-body:last-of-type {\n    background-color: #1e1f22!important;\n}\n\n.blob-code:not(.blob-code-addition):not(.blob-code-deletion):not(.blob-code-hunk) {\n    color: #A9B7C6!important;  /* default font color */\n    background-color: #1e1f22!important; \n}\n\n.pl-en > span.pl-s1 {\n    color: #BBB529!important;\n}\n",
         "domains": [
           "github.com"
+        ]
+      },
+      {
+        "code": ":root {\n    --color-prettylights-syntax-keyword: #cc7832!important;\n    --color-prettylights-syntax-constant: #cc7832!important;\n    --color-prettylights-syntax-entity:  #ffc66d!important;\n    --color-prettylights-syntax-variable: inherit!important;\n    --color-prettylights-syntax-string: #6a8759!important;\n    --color-prettylights-syntax-comment: #808080!important;\n    --color-prettylights-syntax-entity-tag: #CC7832!important;\n}\n\n.pl-ent {\n    color: --color-prettylights-syntax-keyword: #cc7832!important;\n}\n\n.markdown-body pre {\n    color: #A9B7C6!important;  /* default font color */\n}",
+        "urlPrefixes": [
+          "https://github.com/marketplace/"
         ]
       }
     ],
     "id": 4,
     "_id": "7012ab9b-e1c1-4404-8ad5-33cc7bc01a55",
-    "_rev": 1679290549187,
-    "updateDate": 1679290549187
+    "_rev": 1703724036282,
+    "updateDate": 1703724036282
   },
   {
     "method": "saveStyle",
@@ -172,13 +183,13 @@
     "enabled": true,
     "sections": [
       {
-        "code": "* {\n    font-variant-ligatures: normal !important;\n}\n:root {\n    --code-font: 'JetBrains Mono'!important;\n    --code-font-weight: 400;\n    --default-mono-font: 'JetBrains Mono', 'Menlo' !important;\n    --default-regular-font: 'Inter', -apple-system !important;\n}\ncode {\n    font-family:  var(--code-font) !important;\n}\n\npre {\n    font-family: var(--code-font) !important;\n    font-size: 15px;\n}\n\n\n/* Jupyter Notebook style */\n.jp-Notebook .CodeMirror.cm-s-jupyter {\n    font-family: var(--code-font)!important;\n    font-weight: var(--code-font-weight);\n}\n\n.jp-OutputArea-output pre, .jp-OutputArea-output > * {\n    font-family: var(--code-font)!important;\n    font-weight: var(--code-font-weight);\n}\n\n.ace_content {\n    font-family: var(--code-font);\n    font-weight: var(--code-font-weight);\n}"
+        "code": "* {\n    font-variant-ligatures: normal !important;\n    --code-font: 'JetBrains Mono'!important;\n    --code-font-weight: 400;\n}\n:root {\n    --code-font: 'JetBrains Mono'!important;\n    --code-font-weight: 400;\n    --default-mono-font: 'JetBrains Mono', 'Menlo' !important;\n    --default-regular-font: 'Inter', -apple-system !important;\n}\ncode {\n    font-family:  var(--code-font) !important;\n}\n\npre {\n    font-family: var(--code-font) !important;\n    font-size: 15px;\n}\n\n\n/* Jupyter Notebook style */\n.jp-Notebook .CodeMirror.cm-s-jupyter {\n    font-family: var(--code-font)!important;\n    font-weight: var(--code-font-weight);\n}\n\n.jp-OutputArea-output pre, .jp-OutputArea-output > * {\n    font-family: var(--code-font)!important;\n    font-weight: var(--code-font-weight);\n}\n\n.ace_content {\n    font-family: var(--code-font);\n    font-weight: var(--code-font-weight);\n}"
       }
     ],
     "id": 5,
     "_id": "8a04e8e0-02a2-4edb-a3b3-94efd4bcc0f4",
-    "_rev": 1680415851901,
-    "updateDate": 1680415851901
+    "_rev": 1701237681878,
+    "updateDate": 1701237681878
   },
   {
     "method": "saveStyle",
@@ -321,15 +332,18 @@
     "name": "AWS theme",
     "sections": [
       {
-        "code": "div.logs__log-events-table__formatted-message .logs__log-events-table__content {\n    font-family: var(--code-font) !important;\n}\n\n.logs__log-events-table__cell {\n    font-family: var(--code-font) !important;\n}\n",
+        "code": "div.logs__log-events-table__formatted-message {\n    font-family: var(--code-font) !important;\n}\n\ndiv.logs__log-events-table__formatted-message .logs__log-events-table__content {\n    font-family: var(--code-font) !important;\n}\n\n.live-tail-table-alt__container table.live-tail-table-alt tbody tr td {\n    font-family: var(--code-font) !important;\n}\n\n.awsui awsui-table > * {\n    font-family: var(--code-font) !important;\n}\n\n.logs__log-events-table__cell {\n    font-family: var(--code-font) !important;\n}\n",
+        "urlPrefixes": [
+          "us-east-1.console.aws.amazon.com"
+        ],
         "domains": [
           "console.aws.amazon.com"
         ]
       }
     ],
-    "updateDate": 1675911256652,
+    "updateDate": 1701336286066,
     "_id": "792a3aef-8ccf-47a2-b4ab-0fd24893582a",
-    "_rev": 1675911256652,
+    "_rev": 1701336286067,
     "id": 13
   },
   {
@@ -357,13 +371,14 @@
       {
         "code": "code span, kbd span, pre span, samp span {\n    font-family: var(--code-font) !important;\n}",
         "urlPrefixes": [
-          "https://pytorch-lightning.readthedocs.io/"
+          "https://pytorch-lightning.readthedocs.io/",
+          "https://lightning.ai/"
         ]
       }
     ],
-    "updateDate": 1678062071422,
+    "updateDate": 1687223308342,
     "_id": "20891371-f612-4698-9faa-054d8342c474",
-    "_rev": 1678062071422,
+    "_rev": 1687223308343,
     "id": 15
   },
   {
@@ -372,15 +387,15 @@
     "name": "Retool theme",
     "sections": [
       {
-        "code": "/* Text Classes */\n .class1 {\n\tline-height: 1.5;\n\tmargin-left: 20px;\n}\n\n.class2 {\n\tline-height: 1.5;\n}\n\n.class3 {\n\tfont-size: 14px;\n\tline-height: 1.5;\n  font-family: Helvetica;\n\tcolor: #65B2F3;\n}\n\n.class4 {\n\tfont-size: 12px;\n\tcolor: white;\n  font-family: Helvetica;\n\tline-height: 1.5;\n}\n\n.class5 {\n\tcolor: white;\n\tfont-size: 12px;\n  font-family: Helvetica;\n}\n.class6 {\n\tcolor: #747474;\n  font-family: Helvetica;\n  font-weight: bold;\n\tfont-size: 12px;\n}\n.class7 {\n\tcolor: white;\n\tfont-size: 12px;\n  font-family: Helvetica;\n  line-height: 1;\n}\n  \n.line_breaks {\n\theight:3px; \n  border:none; \t\t\t\n  color:#000; \n  background-color:#2F4F4F; \n  width:100%; \n  padding: 0px;\n  vertical-align: middle;\n  padding-top: 0px;\n  margin: 10 auto;\n} \n\n/* Background */\n\n._retool-container_1 {\n\tbackground-color: #171E25!important;\n}\n\n._retool-rcontainer_2 {\n\tbackground-color: #171E25!important;\n}\n\n._retool-container_3 {\n\tbackground-color: #171E25!important;\n}\n\n._retool-container_4 {\n\tbackground-color: #171E25!important;\n}\n\n._retool-container_5 {\n\tbackground-color: #171E25!important;\n}\n  .retool-container-title-wrapper {\n    height: 40px;\n    background-color: #1C2A35;\n    font-family: Arial;\n    font-style: normal;\n    font-weight: 600;\n    font-size: 12px;\n    line-height: 16px;\n    letter-spacing: .03em;\n    text-transform: uppercase;\n    color: white;\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-align: center;\n    align-items: center;\n    padding-left: 18px;\n    padding-right: 18px;\n    border-radius: 4px 4px 0 0;\n    \n\n</style> \n<style>\n  /* Background  of page*/\n  \ndiv.retool-grid.root-retool-grid {\n    background-color: #121212;\n}\ndiv.presentation-header-container.navbar-production {\n   background-color: #121212; \n}\ndiv.presentation-canvas-padding {\n    background-color: #121212; \n}\nspan.ant-dropdown-trigger {\n    display: none;\n}\nspan.ant-breadcrumb-separator {\n   display: none; \n}\ndiv.presentation-header-container.navbar-production {\n    display: none;\n}\n    \n</style>\n<style>\n  /* Button Styling */ \n  \n._retool-button_1.nofs > div > button {\n    background-color: #171E25;\n    border: 2px solid #FE5821;\n  \tcolor:white;\n}\n._retool-button_2.nofs > div > button {\n    background-color: #171E25;\n    border: 2px solid #FE5821;\n  \tcolor:white;\n}\n  \n._retool-button_3.nofs > div > button {\n    background-color: #171E25;\n    border: 2px solid #FE5821;\n  \tcolor:white;\n}  \n\n._retool-modal_1 > button {\n    background-color: #FE5821;\n    border: 2px solid #FE5821;\n  \tcolor:black;\n} \n  \n._retool-modal_2 > button {\n    background-color: #FE5821;\n    border: 2px solid #FE5821;\n  \tcolor:#FFF;\n\n}  \n  \n  \n/* Hover Button Styling */  \n\n._retool-button_1.nofs > div > button:hover {\n    background-color: #F0805B;\n    border: 2px solid #F0805B;\n  \tcolor:#FFF;\n}\n._retool-button_2.nofs > div > button:hover {\n    background-color: #F0805B;\n    border: 2px solid #F0805B;\n  \tcolor:#FFF;\n} \n._retool-modal_1 > button:hover {\n    background-color: #F0805B;\n    border: 2px solid #F0805B;\n  \tcolor:#fff;\n} \n  \n._retool-modal_2 > button:hover {\n    background-color: #F0805B;\n    border: 2px solid #F0805B;\n  \tcolor:#fff;\n}  \n  \n._retool-button_3.nofs:hover > div > button {\n    background-color: #F0805B;\n    border: 2px solid #F0805B;\n  \tcolor:#FFF;\n}  ",
+        "code": "div.CodeMirror-lines {\n    font-size: 0.8rem;\n}\n\n/* Text Classes */\n .class1 {\n\tline-height: 1.5;\n\tmargin-left: 20px;\n}\n\n.class2 {\n\tline-height: 1.5;\n}\n\n.class3 {\n\tfont-size: 14px;\n\tline-height: 1.5;\n  font-family: Helvetica;\n\tcolor: #65B2F3;\n}\n\n.class4 {\n\tfont-size: 12px;\n\tcolor: white;\n  font-family: Helvetica;\n\tline-height: 1.5;\n}\n\n.class5 {\n\tcolor: white;\n\tfont-size: 12px;\n  font-family: Helvetica;\n}\n.class6 {\n\tcolor: #747474;\n  font-family: Helvetica;\n  font-weight: bold;\n\tfont-size: 12px;\n}\n.class7 {\n\tcolor: white;\n\tfont-size: 12px;\n  font-family: Helvetica;\n  line-height: 1;\n}\n  \n.line_breaks {\n\theight:3px; \n  border:none; \t\t\t\n  color:#000; \n  background-color:#2F4F4F; \n  width:100%; \n  padding: 0px;\n  vertical-align: middle;\n  padding-top: 0px;\n  margin: 10 auto;\n} \n\n/* Background */\n\n._retool-container_1 {\n\tbackground-color: #171E25!important;\n}\n\n._retool-rcontainer_2 {\n\tbackground-color: #171E25!important;\n}\n\n._retool-container_3 {\n\tbackground-color: #171E25!important;\n}\n\n._retool-container_4 {\n\tbackground-color: #171E25!important;\n}\n\n._retool-container_5 {\n\tbackground-color: #171E25!important;\n}\n  .retool-container-title-wrapper {\n    height: 40px;\n    background-color: #1C2A35;\n    font-family: Arial;\n    font-style: normal;\n    font-weight: 600;\n    font-size: 12px;\n    line-height: 16px;\n    letter-spacing: .03em;\n    text-transform: uppercase;\n    color: white;\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-align: center;\n    align-items: center;\n    padding-left: 18px;\n    padding-right: 18px;\n    border-radius: 4px 4px 0 0;\n    \n\n</style> \n<style>\n  /* Background  of page*/\n  \ndiv.retool-grid.root-retool-grid {\n    background-color: #121212;\n}\ndiv.presentation-header-container.navbar-production {\n   background-color: #121212; \n}\ndiv.presentation-canvas-padding {\n    background-color: #121212; \n}\nspan.ant-dropdown-trigger {\n    display: none;\n}\nspan.ant-breadcrumb-separator {\n   display: none; \n}\ndiv.presentation-header-container.navbar-production {\n    display: none;\n}\n    \n</style>\n<style>\n  /* Button Styling */ \n  \n._retool-button_1.nofs > div > button {\n    background-color: #171E25;\n    border: 2px solid #FE5821;\n  \tcolor:white;\n}\n._retool-button_2.nofs > div > button {\n    background-color: #171E25;\n    border: 2px solid #FE5821;\n  \tcolor:white;\n}\n  \n._retool-button_3.nofs > div > button {\n    background-color: #171E25;\n    border: 2px solid #FE5821;\n  \tcolor:white;\n}  \n\n._retool-modal_1 > button {\n    background-color: #FE5821;\n    border: 2px solid #FE5821;\n  \tcolor:black;\n} \n  \n._retool-modal_2 > button {\n    background-color: #FE5821;\n    border: 2px solid #FE5821;\n  \tcolor:#FFF;\n\n}  \n  \n  \n/* Hover Button Styling */  \n\n._retool-button_1.nofs > div > button:hover {\n    background-color: #F0805B;\n    border: 2px solid #F0805B;\n  \tcolor:#FFF;\n}\n._retool-button_2.nofs > div > button:hover {\n    background-color: #F0805B;\n    border: 2px solid #F0805B;\n  \tcolor:#FFF;\n} \n._retool-modal_1 > button:hover {\n    background-color: #F0805B;\n    border: 2px solid #F0805B;\n  \tcolor:#fff;\n} \n  \n._retool-modal_2 > button:hover {\n    background-color: #F0805B;\n    border: 2px solid #F0805B;\n  \tcolor:#fff;\n}  \n  \n._retool-button_3.nofs:hover > div > button {\n    background-color: #F0805B;\n    border: 2px solid #F0805B;\n  \tcolor:#FFF;\n}  \n      \n      ",
         "domains": [
           "retool.com"
         ]
       }
     ],
-    "updateDate": 1679795206239,
+    "updateDate": 1682340305712,
     "_id": "60207e6f-1651-470c-88a0-8093bfa08fd3",
-    "_rev": 1679795206239,
+    "_rev": 1682340305712,
     "id": 16
   }
 ]
